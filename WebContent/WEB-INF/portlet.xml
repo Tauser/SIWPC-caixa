@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd"
+	id="br.gov.caixa.faleconosco-pub">
+	
+		<portlet>
+		<portlet-name>faleconosco-negociacao</portlet-name>
+		<display-name>faleconosco-negociacao</display-name>
+		<display-name xml:lang="pt-BR">faleconosco-pub</display-name>
+		<portlet-class>br.gov.caixa.faleconosco.portal.portlet.NegociacaoPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>faleconosco-negociacao</title>
+			<short-title>faleconosco-negociacao</short-title>
+			<keywords>faleconosco-negociacao</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>tokenCaptchaURL</name>
+				<value>http://captchaws.des.extra.caixa.gov.br/Captcha.svc/GerarToken/</value>
+			</preference>
+			<preference>
+				<name>imgCaptchaURL</name>
+				<value>http://captchaws.des.extra.caixa.gov.br/Captcha.svc/GerarImagem</value>
+			</preference>
+			<preference>
+				<name>soundCaptchaURL</name>
+				<value>http://captchaws.des.extra.caixa.gov.br/Captcha.svc/GerarAudio</value>
+			</preference>
+			<preference>
+				<name>validateCaptchaURL</name>
+				<value>http://captchaws.des.extra.caixa.gov.br/Captcha.svc/ValidarCaptcha</value>
+			</preference>
+			<preference>
+				<name>servico_registra_negociacao</name>
+				<value>http://siouv2.desenvolvimento.extracaixa/siouv-web/webService/servicos/registar/preOcorrenciaSac</value>
+			</preference>
+			<preference>
+				<name>servico_busca_por_protocolo</name>
+				<value>http://siouv2.tqs.desenvolvimento.extracaixa/siouv-web/webService/servicos/consultar/ocorrenciasPorProtocolo</value>
+			</preference>
+		</portlet-preferences>
+		
+		
+		
+		<supported-processing-event>
+			<name>ProcessEvent</name>
+		</supported-processing-event>
+		<supported-publishing-event>
+			<name>PublishEvent</name>
+		</supported-publishing-event>
+		
+		
+	</portlet>
+	
+	<portlet>
+		<portlet-name>faleconosco-pesquisa</portlet-name>
+		<display-name>faleconosco-pesquisa</display-name>
+		<display-name xml:lang="pt-BR">faleconosco-pub</display-name>
+		<portlet-class>br.gov.caixa.faleconosco.portal.portlet.PesquisaSatisfacaoPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+		</supports>
+
+
+		<portlet-info>
+			<title>faleconosco-pesquisa</title>
+			<short-title>faleconosco-pesquisa</short-title>
+			<keywords>faleconosco-pesquisa</keywords>
+		</portlet-info>
+		
+		
+		<supported-processing-event>
+			<name>ProcessEvent</name>
+		</supported-processing-event>
+		<supported-publishing-event>
+			<name>PublishEvent</name>
+		</supported-publishing-event>
+	</portlet>
+	
+	<portlet>
+		<portlet-name>faleconosco-pub</portlet-name>
+		<display-name>faleconosco-pub</display-name>
+		<display-name xml:lang="pt-BR">faleconosco-pub</display-name>
+		<portlet-class>br.gov.caixa.faleconosco.portal.portlet.FaleConoscoPortlet</portlet-class>
+		<init-param>
+			<name>wps.markup</name>
+			<value>html</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+			<portlet-mode>edit_defaults</portlet-mode>
+		</supports>
+
+
+		<supported-locale>pt_BR</supported-locale>
+		<resource-bundle>br.gov.caixa.faleconosco.portal.nl.FormularioPortletResource</resource-bundle>
+		<portlet-info>
+			<title>faleconosco-pub</title>
+			<short-title>faleconosco-pub</short-title>
+			<keywords>faleconosco-pub</keywords>
+		</portlet-info>
+		<portlet-preferences>
+			<preference>
+				<name>natureza</name>
+				<value>1</value>
+			</preference>
+			<preference>
+				<name>captcha_server_url</name>
+				<value></value>
+			</preference>
+		</portlet-preferences>
+		<supported-processing-event>
+			<name>ProcessEvent</name>
+		</supported-processing-event>
+		<supported-publishing-event>
+			<name>PublishEvent</name>
+		</supported-publishing-event>
+	</portlet>
+	<custom-portlet-mode>
+		<portlet-mode>
+		edit_defaults
+		</portlet-mode>
+	</custom-portlet-mode>
+	<default-namespace>http://faleconosco-pub/</default-namespace>
+	<event-definition>
+		<name>PublishEvent</name>
+		<value-type>java.lang.String</value-type>
+	</event-definition>
+	<event-definition>
+		<name>ProcessEvent</name>
+		<value-type>java.lang.String</value-type>
+	</event-definition>
+
+	<container-runtime-option>
+		<name>com.ibm.portal.public.session</name>
+		<value>true</value>
+	</container-runtime-option>
+</portlet-app>

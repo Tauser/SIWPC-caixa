@@ -1,0 +1,112 @@
+.name { /* float:left; */
+	margin-top: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	/*border:1px solid black;*/
+}
+
+.tooltip {
+	position: absolute;
+	margin: 5px;
+	width: 200px;
+	height: 50px;
+	display: none;
+	text-align: center;
+	z-index: 999;
+}
+
+.tooltipBTN {
+	border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	float: left;
+	font-weight: bold;
+	margin: 10px 0 0 15px;
+	padding: 2px 8px;
+	position: static;
+	vertical-align: middle;
+}
+
+.captcha *,.captcha ::after,.captcha ::before{box-sizing:border-box}.captcha{background-color:#e8eaed;display:inline-block;width:240px;padding:6px;border-radius:6px}.captcha-controles,.captcha-imagem,.captcha-texto input{background-color:#fff}.captcha-imagem{padding:8px;text-align:center;border-top-right-radius:6px;border-top-left-radius:6px;border-bottom:4px solid #e8eaed}.captcha-controles{display:flexbox;display:flex;width:100%;border-bottom-right-radius:6px;border-bottom-left-radius:6px}.captcha-controles>div{border-left:1px solid #e8eaed;float:left;padding:7px 5px;text-align:center;width:12%}.captcha-controles>.captcha-texto{width:64%;padding-top:6px}.captcha-texto input{border:none;color:#666;padding:1px 4px;width:100%;text-align:center; font-size:smaller;}
+
+/* Pesquisa de Satisfacao */
+/*.fieldset-pesquisa-satisfacao .legend{
+    margin-right: 10;
+    width: 25%;
+}*/
+.fieldset-pesquisa-satisfacao .form-set.tabela-widh-100{
+    width: 100%;
+}
+.form-row.indentificacao table{
+	font-size: 11pt;
+	margin-bottom:0.2rem;
+}
+.form-row.indentificacao table thead{	
+	font-weight: 600;
+}
+.form-row.indentificacao table tbody td{	
+	padding: 1em 0.5em;	
+}
+.form-row.indentificacao table tbody td:last-child{	
+	text-align:center	
+}
+.legenda-tabela p{
+	font-size:10pt;
+	color:#aaa
+}
+.legenda-tabela .periodo-ocorrencia{
+	font-size:11pt;
+	color:#aaa;
+}
+.legenda-tabela div{
+	margin-bottom:1rem;
+}
+.pesquisa-satisfacao{
+	font-size:12pt;
+}   
+.pesquisa-satisfacao div{
+ margin-top:0.5rem;
+}
+.pesquisa-satisfacao .hint{
+	font-size:10pt;
+	color:#aaa;
+}
+.pesquisa-satisfacao button{
+	margin-right: 1rem;
+}
+.pesquisa-satisfacao-legend{
+	background: linear-gradient(#e6edf9, #fff);
+	color: #0066b3;
+}
+.pesquisa-satisfacao .control-item .title{
+	font-size: 14pt;
+    font-weight: 600;
+} 
+.pesquisa-satisfacao-legend ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.pesquisa-satisfacao-legend .legend-title{
+	font-weight:bold;
+}
+.pesquisa-satisfacao-legend .legend-info{
+	margin-left:2rem;
+	margin-top:1rem;
+}
+.pesquisa-satisfacao-legend .legend-info span{
+	font-size:10pt;
+}
+.pesquisa-satisfacao-legend .legend-info span.legend-desc{
+	color:#555;
+}
+.content-section.legend-content {
+    padding-top: 0;
+}
+.fieldset-pesquisa-satisfacao#passo2{
+    padding-bottom: 0.5rem;
+}
+#passo2 li.indentificacao{
+ margin-bottom: 0.5rem; 
+}
+/**/
